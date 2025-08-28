@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタンの動作</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button id="myButton">ここをクリック</button>
+        <p id="displayText" class="hidden"></p>
+    </div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            const displayText = document.getElementById('displayText');
+            displayText.textContent = 'みなとの家庭、穢多非人';
+            displayText.classList.remove('hidden');
+        });
+    </script>
+
+</body>
+</html>
